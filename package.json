@@ -1,0 +1,15 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "Node connection to MS Access dabatase",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon -r dotenv/config index.js"
+  },
+  "author": "TicianoFilho",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-safe": "^8.2.0",
+    "node-adodb": "^5.0.3"
+  }
+}
