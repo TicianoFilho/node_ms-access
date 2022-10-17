@@ -4,8 +4,8 @@ const DB_PATH = process.env.DB_PATH;
 const PROVIDER = process.env.PROVIDER;
 const PASSWORD = process.env.PASSWORD;
 
-const fullStrConn = `Provider=${ PROVIDER };Data Source=${ DB_PATH };Jet OLEDB:Database Password=${ PASSWORD }`;
+const fullConnStr = `Provider=${ PROVIDER };Data Source=${ DB_PATH };Jet OLEDB:Database Password=${ PASSWORD }`;
 
-const connection  = adodb.open(fullStrConn);
+const connection  = adodb.open(fullConnStr);
 
 module.exports = connection;
